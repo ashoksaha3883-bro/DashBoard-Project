@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Translation dictionary
+//  dictionary
 const translations = {
   en: {
     createWorkspace: 'Create Workspace',
@@ -216,7 +216,7 @@ export const LanguageProvider = ({ children }) => {
 
   const t = (key, params = {}) => {
     let text = translations[language][key] || key;
-    // Replace placeholders like {count}
+    // Replace placeholders 
     Object.keys(params).forEach(param => {
       text = text.replace(`{${param}}`, params[param]);
     });
