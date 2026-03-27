@@ -134,7 +134,7 @@ const AnalyticsSection = ({ items, maxPrice, getPriceColor }) => {
       cells.push(
         <div
           key={i}
-          className={`flex items-center justify-center text-xs sm:text-sm rounded-full transition-colors
+          className={`flex items-center justify-center text-xs sm:text-sm rounded-full 
           w-8 h-8 sm:w-10 sm:h-10
           ${
             isValidDay
@@ -143,7 +143,7 @@ const AnalyticsSection = ({ items, maxPrice, getPriceColor }) => {
                 : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
               : 'bg-transparent'
           }
-          ${isCurrentDay ? 'ring-2 ring-blue-500 ring-offset-2' : ''}
+        
         `}
           title={
             isValidDay
@@ -164,7 +164,7 @@ const AnalyticsSection = ({ items, maxPrice, getPriceColor }) => {
           {['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map(day => (
             <div
               key={day}
-              className="text-[10px] sm:text-xs font-medium text-gray-400 text-center"
+              className="text-[10px] sm:text-xs  text-gray-400 text-center"
             >
               {day}
             </div>
@@ -196,8 +196,8 @@ const AnalyticsSection = ({ items, maxPrice, getPriceColor }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
 
       
-        <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-          <h3 className="font-medium text-gray-700 mb-3 flex items-center gap-2">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md ">
+          <h3 className="text-gray-700 mb-3 flex items-center gap-2">
             <span className="w-1 h-4 bg-blue-500 rounded-full"></span>
             {t('monthlyDistribution')}
           </h3>
@@ -258,9 +258,9 @@ const AnalyticsSection = ({ items, maxPrice, getPriceColor }) => {
         </div>
 
 
-        <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md ">
 
-          <h3 className="font-medium text-gray-700 mb-1 flex items-center gap-2">
+          <h3 className=" text-gray-700 mb-1 flex items-center gap-2">
             <span className="w-1 h-4 bg-green-500 rounded-full"></span>
             {new Date().toLocaleString('default', {
               month: 'long',

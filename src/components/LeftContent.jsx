@@ -122,7 +122,7 @@ const LeftContent = ({ items }) => {
             {t('dashboard')}
           </h1>
 
-          <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+          <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md ">
 
             <h3 className="font-medium text-gray-700 mb-3 flex items-center gap-2">
               <span className="w-1 h-4 bg-yellow-500 rounded-full"></span>
@@ -161,7 +161,7 @@ const LeftContent = ({ items }) => {
 
             )}
 
-            <button className="mt-3 w-full text-sm text-blue-600 hover:text-blue-800 font-medium transition">
+            <button className="mt-3 w-full text-sm text-blue-600 hover:text-blue-800 ">
               {t('viewAllItems')}
             </button>
 
@@ -201,7 +201,7 @@ const LeftContent = ({ items }) => {
 
                   <button
                     onClick={() => setSortBy('price')}
-                    className={`px-3 py-1 text-xs rounded-full transition ${
+                    className={`px-3 py-1 text-xs rounded-full ${
                       sortBy === 'price'
                         ? 'bg-blue-500 text-white'
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -228,7 +228,7 @@ const LeftContent = ({ items }) => {
                   return (
                     <div
                       key={index}
-                      className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                      className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg hover:bg-gray-100 "
                     >
 
                       <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
@@ -239,7 +239,7 @@ const LeftContent = ({ items }) => {
 
                         <div className="flex justify-between items-center">
 
-                          <p className="font-medium truncate">
+                          <p>
                             {item.name}
                           </p>
 

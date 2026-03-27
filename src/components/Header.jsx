@@ -58,9 +58,9 @@ const Header = ({ addItem }) => {
   return (
     <>
       
-      <div className="sticky top-0 z-40 flex flex-col md:flex-row md:justify-between md:items-center gap-3 p-4 bg-white shadow-sm rounded-t-xl">
+      <div className=" top-0 z-40 flex flex-col md:flex-row md:justify-between md:items-center gap-3 p-4 bg-white shadow-sm rounded-t-xl">
 
-        <h5 className="text-base md:text-lg font-semibold text-center md:text-left">
+        <h5 className="md:text-lg font-semibold text-center md:text-left">
           {t('ofspace')}
         </h5>
 
@@ -70,7 +70,7 @@ const Header = ({ addItem }) => {
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
-            className="border border-gray-300 rounded-md px-2 md:px-3 py-1 text-xs md:text-sm focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md px-2 md:px-3 py-1 text-xs md:text-sm"
           >
             <option value="en">English</option>
             <option value="hi">हिन्दी</option>
@@ -95,7 +95,7 @@ const Header = ({ addItem }) => {
           ) : (
             <button
               onClick={() => setShowModal(true)}
-              className="px-3 md:px-4 py-1 md:py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 text-xs md:text-sm"
+              className="px-3 md:px-4 py-1 md:py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700  md:text-sm"
             >
               {t('login')}
             </button>
@@ -114,7 +114,7 @@ const Header = ({ addItem }) => {
 
       {/* Login  */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
 
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md">
 
@@ -189,7 +189,7 @@ const Header = ({ addItem }) => {
 
       {/* Add Item  */}
       {showModal2 && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center z-50">
 
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md">
 
